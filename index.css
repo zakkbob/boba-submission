@@ -5,7 +5,12 @@ body {
     background: linear-gradient(135deg, hsla(27, 79%, 63%, 1) 0%, hsla(331, 62%, 62%, 1) 100%);
     background: -moz-linear-gradient(135deg, hsla(27, 79%, 63%, 1) 0%, hsla(331, 62%, 62%, 1) 100%);
     background: -webkit-linear-gradient(135deg, hsla(27, 79%, 63%, 1) 0%, hsla(331, 62%, 62%, 1) 100%);
-    height:100vh;
+    height:fit-content;
+    min-height:100dvh;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
 }
 
 h1 {
@@ -24,6 +29,10 @@ h1 > b {
     text-decoration: underline wavy;
 }
 
+h2 {
+    color: hsla(241, 62%, 62%, 1);
+}
+
 p {
     font-size: large;
     color:white;
@@ -33,4 +42,27 @@ img {
     max-width: 400px;
     width: 100%;
     border-radius: 10px;
+}
+
+.fishtank {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100vw;
+    max-width:1200px;
+    height:fit-content;
+    justify-content: space-around;
+}
+
+.fish-image {
+    max-height: 300px;
+}
+
+.fish-description {
+    color: white;
+}
+
+.loading {
+	width:100vw;
+	max-width: 200px;
 }
